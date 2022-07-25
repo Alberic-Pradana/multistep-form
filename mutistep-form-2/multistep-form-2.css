@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+/* 
+::selection {
+  color: #fff;
+  background: #d43f8d;
+} */
+
+.modal__outer {
+  background: rgba(128, 128, 129, 0.6);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  z-index: 100;
+  place-items: center;
+  font-size: 0.9rem;
+  display: grid;
+}
+
+/* -------------------- MULTIPAGE FORM CARD -------------------- */
+.modal__card {
+  width: 80vw;
+  height: 80vh;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  background: white;
+  background-image: url(../assets/img/bg-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 25rem;
+  /* border: 1px solid rgb(48, 47, 47); */
+  /* background: linear-gradient(119.23deg, #526eb1 -3.96%, #102669 101.54%); */
+  /* background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d); */
+  margin: 3rem auto;
+}
+
+/* ----------------- HEADER MULTIPAGE FORM ----------------- */
+.modal__card header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.modal__card header h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.5rem auto 2rem;
+  color: #102669;
+}
+
+.modal__card .form__outer {
+  width: 100%;
+  overflow: hidden;
+  text-align: start;
+}
+
+.modal__card .form__outer form {
+  display: flex;
+  width: 800%;
+}
+
+/* -------------------- HALAMAN UTAMA -------------------- */
+.form__outer form .page {
+  width: 12.5%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.page__container {
+  margin: 0 auto 1rem;
+  padding: 0 2rem;
+}
+
+.form__outer form .page .page__title {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 3rem;
+}
+
+.form__outer form .page .page__field {
+  display: grid;
+  grid-template-columns: 6rem auto;
+  gap: 1rem;
+  width: 100%;
+  height: fit-content;
+  margin: 10px 0;
+}
+
+.form__outer form .page .page__field.page__field-address {
+  gap: 10px 1rem;
+}
+
+.form__outer form .page .page__field .page__field-grid1 {
+  display: grid;
+  grid-template-columns: 6rem 71%;
+  gap: 2rem;
+  width: 100%;
+  height: fit-content;
+}
+
+form .page .page__field .label {
+  text-align: start;
+  color: #000;
+}
+
+form .page .page__field input {
+  height: 2.2rem;
+  width: 19rem;
+  min-width: 17rem;
+  border: 1px solid #000;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form .page .page__field select {
+  height: 2.2rem;
+  width: 21rem;
+  min-width: 19rem;
+  padding: 0 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form .page .page__field textarea {
+  width: 19rem;
+  min-width: 17rem;
+  height: 3.5rem;
+  resize: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* ----------------------- BUTTON ----------------------- */
+.btn__form {
+  text-align: center;
+}
+
+.modal__card .modal-btn {
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background: #163592;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  transition: 0.5s ease;
+}
+
+.modal__card .modal-btn:hover {
+  background: transparent;
+  border: 1px solid #102669;
+  color: #102669;
+}
+
+form .page .btn__form button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+form .page .btn__form button.next {
+  margin-left: 3px;
+}
+
+/* ----------------------- PROGRESS BAR ----------------------- */
+
+.modal__card .progress-bar {
+  display: flex;
+  margin: 1rem 0 2rem;
+  user-select: none;
+}
+.modal__card .progress-bar .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.modal__card .progress-bar .step p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+/* ---------------- STEP NUMBER ---------------- */
+.progress-bar .step .bullet {
+  height: 25px;
+  width: 25px;
+  background: #000;
+  /* border: 2px solid #000; */
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.progress-bar .step .bullet.active {
+  border-color: #102669;
+  background: #102669;
+}
+.progress-bar .step .bullet span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+/* .progress-bar .step .bullet.active span {
+  display: none;
+} */
+
+/* ---------------- MODAL PROGRES BAR ---------------- */
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  left: 27px;
+  height: 3px;
+  width: 12vw;
+  background: #000;
+}
+.progress-bar .step .bullet.active:after {
+  background: #102669;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+  display: none;
+}
+.progress-bar .step p.active {
+  color: #102669;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active {
+  display: block;
+  color: #fff;
+}
+
+/* ----------------------- First Page ----------------------- */
+.page__container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.page__container-1 .page__container-left {
+  justify-content: center;
+}
+
+.page__container-1 .page__container-right {
+  justify-content: center;
+}
+
+/* ----------------------- Second Page ----------------------- */
+.page__check-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.page__check-list h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page__container-2 {
+  margin: 1.5rem 2rem 2rem 2rem;
+}
+
+/* ---------------------------- MEDIA QUERY ---------------------------- */
+/* ---------------------------- MEDIA QUERY FOR TABLET ---------------------------- */
+@media screen and (max-width: 1200px) {
+  .modal__card {
+    width: 90vw;
+  }
+
+  .page__container {
+    padding: 0;
+  }
+  .form__outer form .page .page__title {
+    margin-left: 1rem;
+  }
+
+  .page__container-2 {
+    margin: 1.5rem 2rem 1rem 1rem;
+  }
+}
+
+/* ---------------------------- MEDIA QUERY FOR MINI TABLET ---------------------------- */
+@media screen and (max-width: 1024px) {
+  .modal__card .progress-bar {
+    display: none;
+  }
+
+  .modal__card {
+    width: 60vw;
+    overflow: hidden;
+  }
+
+  .modal__card .form__outer {
+    height: 65vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .page__container-1 {
+    grid-template-columns: 1fr;
+    gap: 0;
+    /* margin-left: 5rem; */
+  }
+
+  .btn__form {
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .page__check-list {
+    display: grid;
+    gap: 0.5rem;
+  }
+}

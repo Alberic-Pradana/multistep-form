@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Multistep-form | Modal</title>
+    <link rel="stylesheet" href="./multistep-form-2.css" />
+  </head>
+  <body>
+    <!-- ---------------------- RESPONSIVE MULTISTEP FORM MODAL ---------------------- -->
+    <div class="modal__outer">
+      <div class="modal__card">
+        <header>
+          <h2>Selamat Datang di Naylatools</h2>
+          <h5>Untuk memulai, silahkan lengkapi informasi detail perusahaan anda</h5 class="color-success">
+        </header>
+        <div class="progress-bar">
+          <div class="step">
+            <p>Info Perusahaan</p>
+            <div class="bullet">
+              <span>1</span>
+            </div>
+            <div class="check"></div>
+          </div>
+          <div class="step">
+            <p>Fitur Dasar</p>
+            <div class="bullet">
+              <span>2</span>
+            </div>
+            <div class="check"></div>
+          </div>
+          <div class="step">
+            <p>Penjualan</p>
+            <div class="bullet">
+              <span>3</span>
+            </div>
+            <div class="check"></div>
+          </div>
+          <div class="step">
+            <p>Pembelian</p>
+            <div class="bullet">
+              <span>4</span>
+            </div>
+            <div class="check"></div>
+          </div>
+          <div class="step">
+            <p>Persediaan</p>
+            <div class="bullet">
+              <span>5</span>
+            </div>
+            <div class="check"></div>
+          </div>
+          <div class="step">
+            <p>Akun Perkiraan</p>
+            <div class="bullet">
+              <span>6</span>
+            </div>
+            <div class="check"></div>
+          </div>
+        </div>
+        <div class="form__outer">
+          <form action="#">
+            <!-- ------------------------- PAGE 1 ------------------------- -->
+            <div class="page slide-page">
+              <div class="page__container page__container-1">
+                <div class="page__container-left">
+                  <div>
+                    <div class="page__field">
+                      <div class="label">Nama Usaha<span>*</span></div>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="page__field">
+                      <div class="label">Kategori Usaha</div>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="page__field">
+                      <div class="label">Bidang Usaha</div>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="page__field">
+                      <div class="label">Telepon</div>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="page__field">
+                      <div class="label">Email</div>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="page__field">
+                      <div class="label">Mata Uang</div>
+                      <select>
+                        <option>Rupiah</option>
+                        <option>US-Dolar</option>
+                        <option>Renin-B</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="page__container-right">
+                  <div>
+                    <div class="page__field">
+                      <div class="label">Tanggal Mulai Data</div>
+                      <input type="date" class="input" />
+                    </div>
+                    <div class="page__field">
+                      <div class="label">Periode Akutansi</div>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="page__field page__field-address">
+                      <div class="label">Alamat</div>
+                      <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="Jalan Prambanan III, Blok E-26"></textarea>
+                      <div></div>
+                      <input type="text" class="input" placeholder="Provinsi" />
+                      <div></div>
+                      <div class="page__field-grid1">
+                        <input type="text" class="input" placeholder="Kode Pos" style="width: 5rem; min-width: 3rem" />
+                        <input type="text" class="input" placeholder="Kota atau Kabupaten" style="width: 11rem; min-width: 9rem" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn__form btn__form-1" style="margin-left: 7rem;">
+                <button class="firstNext modal-btn next">Next</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 2 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Jawablah pertanyaan berikut ini sesuai dengan kondisi usaha anda, agar naylatools dapat merekomendasikan fitur sesuai kebutuhan usaha anda:</div>
+              <div class="page__container page__container-2">
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda memiliki beberapa cabang yang berbeda lokasi ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda bertransaksi dalam mata uang asing ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda memungut dan membayarkan Pajak Pertambahan Nilai ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah Perusahaan anda memotong/dipotong pajak penghasilan PPh 23 saat persetujuan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda mencatat aset-aset perusahaan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda menghitung anggaran biaya dan penjualan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+              </div>
+              <div class="btn__form">
+                <button class="prev-1 prev modal-btn">Previous</button>
+                <button class="next-1 next modal-btn">Next</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 3 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Jawablah pertanyaan berikut ini sesuai dengan kondisi usaha anda, agar naylatools dapat merekomendasikan fitur sesuai kebutuhan usaha anda:</div>
+              <div class="page__container page__container-2">
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan membuatkan surat penawaran harga kepada pelanggan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Pada saat penagihan, apakah anda melakukan proses tukar faktur ke pelanggan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda menghitung dan membayar komisi salesman ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah Perusahaan anda menitipkan barang yang dijual kepada pihak lain (konsinyasi) ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda mengirimkan barang melalui jasa pengiriman ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan memberikan syarat dan tenggang waktu pelunasan kepada pelanggan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+              </div>
+              <div class="btn__form">
+                <button class="prev-2 prev modal-btn">Previous</button>
+                <button class="next-2 next modal-btn">Next</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 4 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Jawablah pertanyaan berikut ini sesuai dengan kondisi usaha anda, agar naylatools dapat merekomendasikan fitur sesuai kebutuhan usaha anda:</div>
+              <div class="page__container page__container-2">
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda memiliki lebih dari satu gudang ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah barang yang dijual memiliki lebih dari satu satuan pada satu jenis barang ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda mencatat nomor seri/produksi barang saat pembelian dan penjualan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah Perusahaan anda memiliki kegiatan memproduksi/merakit barang ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah metode perhitungan biayaa persediaan yang digunakan ?</h5>
+                  <div style="display: flex; gap: 1rem">
+                    <div>
+                      <input type="checkbox" />
+                      <span>Rata-rata</span>
+                    </div>
+                    <div>
+                      <input type="checkbox" />
+                      <span>FIFO (First In First Out)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn__form">
+                <button class="prev-3 prev modal-btn">Previous</button>
+                <button class="next-3 next modal-btn">Next</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 5 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Jawablah pertanyaan berikut ini sesuai dengan kondisi usaha anda, agar naylatools dapat merekomendasikan fitur sesuai kebutuhan usaha anda:</div>
+              <div class="page__container page__container-2">
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda memiliki lebih dari satu gudang ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah barang yang dijual memiliki lebih dari satu satuan pada satu jenis barang ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda mencatat nomor seri/produksi barang saat pembelian dan penjualan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah Perusahaan anda memiliki kegiatan memproduksi/merakit barang ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah metode perhitungan biayaa persediaan yang digunakan ?</h5>
+                  <div style="display: flex; gap: 1rem">
+                    <div>
+                      <input type="checkbox" />
+                      <span>Rata-rata</span>
+                    </div>
+                    <div>
+                      <input type="checkbox" />
+                      <span>FIFO (First In First Out)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn__form">
+                <button class="prev-4 prev modal-btn">Previous</button>
+                <button class="next-4 next modal-btn">Next</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 6 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Jawablah pertanyaan berikut ini sesuai dengan kondisi usaha anda, agar naylatools dapat merekomendasikan fitur sesuai kebutuhan usaha anda:</div>
+              <div class="page__container page__container-2">
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda memiliki beberapa cabang yang berbeda lokasi ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda bertransaksi dalam mata uang asing ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda memungut dan membayarkan Pajak Pertambahan Nilai ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah Perusahaan anda memotong/dipotong pajak penghasilan PPh 23 saat persetujuan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda mencatat aset-aset perusahaan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+                <div class="page__check-list">
+                  <h5>Apakah perusahaan anda menghitung anggaran biaya dan penjualan ?</h5>
+                  <div>
+                    <input type="checkbox" />
+                    <span>Ya</span>
+                  </div>
+                </div>
+              </div>
+              <div class="btn__form">
+                <button class="prev-5 prev modal-btn">Previous</button>
+                <button class="submit modal-btn">Submit</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 7 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Login Details:</div>
+              <div class="page__field">
+                <div class="label">Username</div>
+                <input type="text" class="input" />
+              </div>
+              <div class="page__field">
+                <div class="label">Password</div>
+                <input type="password" class="input" />
+              </div>
+              <div class="page__field btn__form">
+                <button class="prev-5 prev">Previous</button>
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+
+            <!-- ------------------------- PAGE 8 ------------------------- -->
+            <div class="page">
+              <div class="page__title">Login Details:</div>
+              <div class="page__field">
+                <div class="label">Username</div>
+                <input type="text" class="input" />
+              </div>
+              <div class="page__field">
+                <div class="label">Password</div>
+                <input type="password" class="input" />
+              </div>
+              <div class="page__field btn__form">
+                <button class="prev-5 prev">Previous</button>
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------- END OF RESPONSIVE MULTISTEP FORM MODAL ---------------------- -->
+    <script src="./multistep-form-2.js"></script>
+  </body>
+</html>
